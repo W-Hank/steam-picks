@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>本周值得买 · Steam 折扣精选</title>
+<meta name="description" content="按好评率、折扣力度和历史最低价筛出来的 Steam 折扣推荐，每天更新。">
+<style>
+:root{
+  --bg:#f7f5f0; --card:#fff; --line:#e6e0d4; --text:#26241f; --muted:#6f6b62;
+  --gold:#8a6d3b; --green:#2f7d4f; --red:#b04a4a; --chip:#efe9dc;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0e1017; --card:#171b26; --line:#262c3a; --text:#e8e4dc; --muted:#9a99a4;
+         --gold:#c9a86a; --green:#7fc39a; --red:#d98b8b; --chip:#1e2432; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:22px 16px 56px}
+header h1{font-size:22px;margin:0 0 6px;letter-spacing:.5px}
+header p{margin:0;color:var(--muted);font-size:14px}
+.meta{margin:14px 0 18px;font-size:13px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+.top{display:flex;gap:12px}
+.thumb{width:92px;height:43px;flex:none;border-radius:8px;object-fit:cover;background:var(--chip)}
+.title{font-size:16px;font-weight:600;line-height:1.35;margin:0 0 4px}
+.title a{color:inherit;text-decoration:none}
+.sub{font-size:13px;color:var(--muted)}
+.rowline{display:flex;align-items:baseline;gap:8px;margin-top:8px;flex-wrap:wrap}
+.disc{background:var(--green);color:#fff;border-radius:6px;padding:1px 6px;font-size:13px;font-weight:600}
+.price{font-size:19px;font-weight:700;color:var(--gold)}
+.orig{font-size:13px;color:var(--muted);text-decoration:line-through}
+.desc{font-size:14px;color:var(--text);margin:10px 0 0;opacity:.9}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.chip{background:var(--chip);color:var(--muted);border-radius:999px;padding:2px 9px;font-size:12px}
+.chip.warn{color:var(--red);border:1px solid currentColor;background:transparent}
+.chip.ok{color:var(--green);border:1px solid currentColor;background:transparent}
+footer{margin-top:26px;font-size:13px;color:var(--muted);line-height:1.9}
+footer a{color:var(--gold)}
+.empty{padding:40px 0;text-align:center;color:var(--muted)}
+@media (max-width:420px){
+  .wrap{padding:18px 12px 44px}
+  .thumb{width:76px;height:36px}
+  .price{font-size:18px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>本周值得买</h1>
+    <p>Steam 折扣里，按好评率、折扣力度和历史最低价筛出来的</p>
+  </header>
+  <div class="meta">
+    <span id="updated">加载中…</span>
+    <span id="count"></span>
+  </div>
+  <main id="list"><div class="empty">正在读取数据…</div></main>
+  <footer>
+    筛选条件：折扣 ≥50% · 评价 ≥300 条 · 好评率 ≥85% · 只收游戏本体<br>
+    史低来自 IsThereAnyDeal（国区口径），价格为 Steam 国区当前价，不做汇率换算<br>
+    数据每天更新一次 · <a href="https://store.steampowered.com/" target="_blank" rel="noopener">去 Steam</a>
+  </footer>
+</div>
+<script>
+(function () {
+  var list = document.getElementById('list');
+  var updated = document.getElementById('updated');
+  var countEl = document.getElementById('count');
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function card(g) {
+    var c = el('article', 'card');
+
+    var top = el('div', 'top');
+    if (g.image) {
+      var img = el('img', 'thumb');
+      img.src = g.image;
+      img.alt = '';
+      img.loading = 'lazy';
+      top.appendChild(img);
+    }
+    var head = el('div');
+    var h = el('h2', 'title');
+    var a = el('a', null, g.name);
+    a.href = g.url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    h.appendChild(a);
+    head.appendChild(h);
+    if (g.genres && g.genres.length) head.appendChild(el('div', 'sub', g.genres.join(' / ')));
+    top.appendChild(head);
+    c.appendChild(top);
+
+    var line = el('div', 'rowline');
+    line.appendChild(el('span', 'disc', '-' + g.discount + '%'));
+    line.appendChild(el('span', 'price', '¥' + g.price));
+    if (g.original) line.appendChild(el('span', 'orig', '¥' + g.original));
+    if (g.pct != null) line.appendChild(el('span', 'sub', '好评 ' + g.pct + '% · ' + g.reviews + ' 条'));
+    c.appendChild(line);
+
+    if (g.desc) c.appendChild(el('p', 'desc', g.desc));
+
+    var chips = el('div', 'chips');
+    if (g.verdict) chips.appendChild(el('span', 'chip ' + (g.verdict === '史低' ? 'ok' : (g.verdict === '偏贵' ? 'warn' : '')), g.verdict + (g.historyLow ? '（史低 ¥' + g.historyLow + '）' : '')));
+    if (g.chinese) chips.appendChild(el('span', 'chip', '简中'));
+    if (g.released) chips.appendChild(el('span', 'chip', g.released));
+    c.appendChild(chips);
+    return c;
+  }
+
+  fetch('data/games.json?t=' + Date.now())
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (d) {
+      list.innerHTML = '';
+      updated.textContent = '更新于 ' + (d.generatedAt || '未知');
+      countEl.textContent = '共 ' + (d.count || 0) + ' 款';
+      if (!d.items || !d.items.length) {
+        list.appendChild(el('div', 'empty', '这次没有符合条件的折扣，过两天再来看看'));
+        return;
+      }
+      d.items.forEach(function (g) { list.appendChild(card(g)); });
+    })
+    .catch(function (e) {
+      list.innerHTML = '';
+      list.appendChild(el('div', 'empty', '数据读取失败：' + e.message));
+    });
+})();
+</script>
+</body>
+</html>
