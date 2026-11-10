@@ -1,0 +1,42 @@
+name: glitch-watch
+
+on:
+  schedule:
+    - cron: '5 * * * *'   # 每小时第 5 分钟
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: glitch-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 检查异常低价
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          PAGES: '3'
+        run: python3 scripts/glitch.py
+
+      - name: 提交结果
+        run: |
+          git config user.name  "steam-picks-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/glitch.json
+          if git diff --staged --quiet; then
+            echo "没有变化"
+          else
+            git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ) 异常低价检查"
+            git push
+          fi
