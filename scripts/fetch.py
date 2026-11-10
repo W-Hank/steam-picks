@@ -314,7 +314,17 @@ def main():
             i, g["name"][:22], g["discount"], g["price"], g["pct"], g["reviews"], tag or "-"))
         time.sleep(0.8)
 
-    items.sort(key=lambda x: x["score"], reverse=True)
+    # 先按「值不值」分层，再按分数：史低 > 接近史低 > 中位 > 偏贵
+    # ¥5 以下且评价不多的，通常是「喜加一」凑数品，统一沉到后面
+    tier = {"史低": 0, "接近史低": 1, "中位": 2, None: 2, "偏贵": 3}
+
+    def rank_key(x):
+        t = tier.get(x.get("verdict"), 2)
+        if (x.get("price") or 0) < 5 and (x.get("reviews") or 0) < 3000:
+            t += 1
+        return (t, -x["score"])
+
+    items.sort(key=rank_key)
     items = items[:LIMIT]
 
     out = {
