@@ -92,7 +92,10 @@ def parse_search_page(html):
             continue
         name = strip_tags(nm.group(1))
 
-        dm = re.search(r'discount_pct">-(\d+)%', block)
+        # 折扣优先取 data-discount 属性（新版搜索行里一定有），再退回文本
+        dm = re.search(r'data-discount="(\d+)"', block)
+        if not dm:
+            dm = re.search(r'discount_pct">-(\d+)%', block)
         discount = int(dm.group(1)) if dm else 0
         fm = re.search(r'discount_final_price"[^>]*>([^<]+)<', block)
         om = re.search(r'discount_original_price"[^>]*>([^<]+)<', block)
@@ -241,6 +244,10 @@ def main():
 
     cand = [r for r in pool if r["price"] is not None and (r["discount"] or 0) >= MIN_DISCOUNT]
     print("  折扣 ≥%d%%：%d 个" % (MIN_DISCOUNT, len(cand)))
+    if not cand:
+        print("  [诊断] 抽样 5 条，看看解析到了什么：")
+        for r in pool[:5]:
+            print("    ", json.dumps(r, ensure_ascii=False)[:220])
 
     # 搜索页缺评测信息的，补一次商店页（最多 40 个，按折扣排序优先）
     need = [r for r in cand if r.get("reviews") is None][:40]
