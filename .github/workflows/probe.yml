@@ -1,0 +1,31 @@
+name: probe-steamspy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: SteamSpy 可达性
+        run: |
+          echo "--- steamspy detail ---"
+          curl -sS -o /tmp/spy.json -w "http=%{http_code} time=%{time_total}s size=%{size_download}\n" \
+            "https://steamspy.com/api.php?request=appdetails&appid=1145360" || echo "curl failed"
+          head -c 300 /tmp/spy.json || true
+          echo
+          echo "--- appdetails 对照 ---"
+          curl -sS -o /tmp/app.json -w "http=%{http_code} time=%{time_total}s\n" \
+            "https://store.steampowered.com/api/appdetails?appids=1145360&cc=cn&l=schinese" || echo "curl failed"
+          python3 - <<'PY'
+import json, os
+p = '/tmp/spy.json'
+if os.path.exists(p):
+    try:
+        j = json.load(open(p, encoding='utf-8'))
+        print('spy name:', j.get('name'), 'average_forever:', j.get('average_forever'), 'median:', j.get('median_forever'))
+        print('tags:', list((j.get('tags') or {}).keys())[:6])
+    except Exception as e:
+        print('spy parse fail:', e)
+PY
