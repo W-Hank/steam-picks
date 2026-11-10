@@ -1,0 +1,43 @@
+name: daily-picks
+
+on:
+  schedule:
+    - cron: '0 20 * * *'   # UTC 20:00 = 北京 04:00
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-picks
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 抓折扣并生成 games.json
+        env:
+          ITAD_KEY: ${{ secrets.ITAD_KEY }}
+          PAGES: '6'
+          LIMIT: '30'
+        run: python3 scripts/fetch.py
+
+      - name: 提交数据
+        run: |
+          git config user.name  "steam-picks-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/games.json data/history.json
+          if git diff --staged --quiet; then
+            echo "没有变化"
+          else
+            git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ) 更新榜单"
+            git push
+          fi
