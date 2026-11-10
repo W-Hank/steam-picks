@@ -182,6 +182,18 @@ def appdetails(appid):
     }
 
 
+def steamspy_hours(appid):
+    """SteamSpy 平均游玩时长（小时）。403/超时就当没有，不影响主流程。"""
+    try:
+        j = get_json("https://steamspy.com/api.php?request=appdetails&appid=%s" % appid, timeout=20, retries=1)
+        secs = j.get("average_forever") or 0
+        if secs and secs > 0:
+            return round(secs / 60.0, 1)
+    except Exception:  # noqa: BLE001
+        return None
+    return None
+
+
 class ITAD:
     def __init__(self, key):
         self.key = key
@@ -283,6 +295,8 @@ def main():
             continue
         low = itad.history_low(g["appid"]) if key else None
         tag, note = verdict(g["price"], low)
+        hours = steamspy_hours(g["appid"])
+        per_hour = round(g["price"] / hours, 2) if hours and hours > 0 else None
         item = dict(g)
         item.update({
             "desc": (det or {}).get("desc", ""),
@@ -291,6 +305,8 @@ def main():
             "historyLow": low,
             "verdict": tag,
             "verdictNote": note,
+            "avgHours": hours,
+            "perHour": per_hour,
             "score": score(g, low),
         })
         items.append(item)
@@ -305,6 +321,7 @@ def main():
         "generatedAt": datetime.now(CN_TZ).strftime("%Y-%m-%d %H:%M"),
         "count": len(items),
         "withHistory": sum(1 for x in items if x.get("historyLow")),
+        "withHours": sum(1 for x in items if x.get("avgHours")),
         "items": items,
     }
     data_dir = os.path.join(ROOT, "data")
@@ -329,8 +346,8 @@ def main():
     with open(hist_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=0)
 
-    print("\n写入 games.json：%d 条，其中 %d 条有史低；用时 %.0fs" % (
-        out["count"], out["withHistory"], time.time() - t0))
+    print("\n写入 games.json：%d 条，%d 条有史低，%d 条有平均时长；用时 %.0fs" % (
+        out["count"], out["withHistory"], out["withHours"], time.time() - t0))
 
 
 if __name__ == "__main__":
