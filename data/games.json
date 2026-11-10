@@ -1,7 +1,8 @@
 {
- "generatedAt": "2026-11-10 21:45",
+ "generatedAt": "2026-11-10 21:52",
  "count": 30,
  "withHistory": 29,
+ "withHours": 0,
  "items": [
   {
    "appid": "1227890",
@@ -23,6 +24,8 @@
    "historyLow": 17.7,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.94
   },
   {
@@ -45,6 +48,8 @@
    "historyLow": 5.6,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9249
   },
   {
@@ -67,6 +72,8 @@
    "historyLow": 3,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9211
   },
   {
@@ -90,6 +97,8 @@
    "historyLow": 1.59,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9198
   },
   {
@@ -112,6 +121,8 @@
    "historyLow": 10.12,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9158
   },
   {
@@ -120,7 +131,7 @@
    "discount": 70,
    "price": 17.4,
    "original": 58.0,
-   "reviews": 82360,
+   "reviews": 82361,
    "pct": 93,
    "released": "2016 年 7 月 22 日",
    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/477160/0d8220d5231873cc41b2f4b7bc8c57b3b07fdf08/capsule_231x87_alt_assets_27_schinese.jpg?t=1793018738",
@@ -136,6 +147,8 @@
    "historyLow": 4.39,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9096
   },
   {
@@ -158,6 +171,8 @@
    "historyLow": 2.39,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9054
   },
   {
@@ -181,6 +196,8 @@
    "historyLow": 39.2,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9046
   },
   {
@@ -204,6 +221,8 @@
    "historyLow": 17.25,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9031
   },
   {
@@ -227,6 +246,8 @@
    "historyLow": 6.99,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9023
   },
   {
@@ -248,6 +269,8 @@
    "historyLow": 23.1,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9017
   },
   {
@@ -273,6 +296,8 @@
    "historyLow": 7,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9017
   },
   {
@@ -295,6 +320,8 @@
    "historyLow": 3,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.9009
   },
   {
@@ -318,6 +345,8 @@
    "historyLow": 7,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8986
   },
   {
@@ -342,6 +371,8 @@
    "historyLow": 1.99,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8983
   },
   {
@@ -365,6 +396,8 @@
    "historyLow": 9.24,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8983
   },
   {
@@ -387,6 +420,8 @@
    "historyLow": 3,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.896
   },
   {
@@ -409,6 +444,8 @@
    "historyLow": 37.84,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8955
   },
   {
@@ -433,6 +470,8 @@
    "historyLow": 8.4,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8953
   },
   {
@@ -455,6 +494,8 @@
    "historyLow": 10.6,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8947
   },
   {
@@ -477,6 +518,8 @@
    "historyLow": 3,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8946
   },
   {
@@ -498,6 +541,8 @@
    "historyLow": 2.99,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8887
   },
   {
@@ -520,6 +565,8 @@
    "historyLow": 0,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8866
   },
   {
@@ -541,6 +588,8 @@
    "historyLow": 1.69,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8858
   },
   {
@@ -564,6 +613,8 @@
    "historyLow": 0.63,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8853
   },
   {
@@ -587,6 +638,8 @@
    "historyLow": 4.75,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8793
   },
   {
@@ -608,6 +661,8 @@
    "historyLow": 9.99,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8768
   },
   {
@@ -629,6 +684,8 @@
    "historyLow": 3.12,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8735
   },
   {
@@ -651,6 +708,8 @@
    "historyLow": 0.99,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8709
   },
   {
@@ -675,6 +734,8 @@
    "historyLow": 1.07,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
    "score": 0.8698
   }
  ]
