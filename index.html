@@ -112,6 +112,7 @@ footer a{color:var(--gold)}
     var chips = el('div', 'chips');
     if (g.verdict) chips.appendChild(el('span', 'chip ' + (g.verdict === '史低' ? 'ok' : (g.verdict === '偏贵' ? 'warn' : '')), g.verdict + (g.historyLow ? '（史低 ¥' + g.historyLow + '）' : '')));
     if (g.avgHours) chips.appendChild(el('span', 'chip', '平均 ' + g.avgHours + ' 小时' + (g.perHour ? ' · ¥' + g.perHour + '/小时' : '')));
+    if (g.price < 5 && (g.reviews || 0) < 3000) chips.appendChild(el('span', 'chip', '喜加一'));
     if (g.chinese) chips.appendChild(el('span', 'chip', '简中'));
     if (g.released) chips.appendChild(el('span', 'chip', g.released));
     c.appendChild(chips);
