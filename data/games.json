@@ -1,32 +1,54 @@
 {
- "generatedAt": "2026-11-10 21:58",
+ "generatedAt": "2026-11-11 04:34",
  "count": 30,
  "withHistory": 29,
  "withHours": 0,
  "items": [
   {
-   "appid": "1227890",
-   "name": "夏日狂想曲：乡间的难忘回忆",
-   "discount": 70,
-   "price": 17.7,
-   "original": 59.0,
-   "reviews": 19443,
-   "pct": 92,
-   "released": "2020 年 6 月 14 日",
-   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1227890/capsule_231x87_schinese.jpg?t=1766085059",
-   "url": "https://store.steampowered.com/app/1227890/",
-   "desc": "暑假到了，你回到了乡下，见到了好久不见的姑父，姑姑和两位表姐。在为期一个月的暑假生活中，究竟会发生怎样的奇遇呢？在《夏日狂想曲》中一探究竟吧！",
+   "appid": "413410",
+   "name": "Danganronpa: Trigger Happy Havoc",
+   "discount": 90,
+   "price": 6.8,
+   "original": 68.0,
+   "reviews": 8049,
+   "pct": 96,
+   "released": "2016 年 2 月 18 日",
+   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/413410/capsule_231x87.jpg?t=1781085607",
+   "url": "https://store.steampowered.com/app/413410/",
+   "desc": "Investigate murders, search for clues and talk to your classmates to prepare for trial. There, you'll engage in deadly wordplay, going back and forth with suspects. Dissect their statements and fire their words back at them to expose their lies! There's only one way to survive—pull the trigger.",
    "genres": [
-    "冒险",
-    "角色扮演"
+    "冒险"
    ],
-   "chinese": true,
-   "historyLow": 17.7,
+   "chinese": false,
+   "historyLow": 6.8,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
-   "score": 0.94
+   "score": 0.9732
+  },
+  {
+   "appid": "970560",
+   "name": "STEINS;GATE: My Darling's Embrace",
+   "discount": 80,
+   "price": 20.0,
+   "original": 100.0,
+   "reviews": 1823,
+   "pct": 95,
+   "released": "2019 年 12 月 10 日",
+   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/970560/capsule_231x87.jpg?t=1715703432",
+   "url": "https://store.steampowered.com/app/970560/",
+   "desc": "Fall in love with the lab members all over again in this sweet and slapstick romantic comedy!",
+   "genres": [
+    "冒险"
+   ],
+   "chinese": false,
+   "historyLow": 20,
+   "verdict": "史低",
+   "verdictNote": "持平或低于历史最低",
+   "avgHours": null,
+   "perHour": null,
+   "score": 0.9402
   },
   {
    "appid": "1227690",
@@ -177,30 +199,6 @@
    "score": 0.9017
   },
   {
-   "appid": "952040",
-   "name": "同步音律喵赛克",
-   "discount": 75,
-   "price": 3.0,
-   "original": 12.0,
-   "reviews": 3883,
-   "pct": 92,
-   "released": "2018 年 12 月 4 日",
-   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952040/9f3c74726c9823bcd9671ecc6b873670e328f9b0/capsule_231x87_schinese.jpg?t=1769066010",
-   "url": "https://store.steampowered.com/app/952040/",
-   "desc": "人气二次元独立音游《同步音律喵赛克》STEAM版现已登场！！ 《九九八十一》等大量二次元名曲收录， 真实KEY音，经典玩法，多风格界面，永久更新， 诸多特性等你来体验。",
-   "genres": [
-    "独立",
-    "模拟"
-   ],
-   "chinese": true,
-   "historyLow": 3,
-   "verdict": "史低",
-   "verdictNote": "持平或低于历史最低",
-   "avgHours": null,
-   "perHour": null,
-   "score": 0.9009
-  },
-  {
    "appid": "1181400",
    "name": "Path of Giants",
    "discount": 80,
@@ -231,7 +229,7 @@
    "discount": 57,
    "price": 37.84,
    "original": 88.0,
-   "reviews": 3293,
+   "reviews": 3296,
    "pct": 97,
    "released": "2022 年 6 月 17 日",
    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1776970/capsule_231x87_schinese.jpg?t=1761700355",
@@ -247,7 +245,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
-   "score": 0.8955
+   "score": 0.8956
   },
   {
    "appid": "1037190",
@@ -255,7 +253,7 @@
    "discount": 80,
    "price": 8.4,
    "original": 42.0,
-   "reviews": 582,
+   "reviews": 583,
    "pct": 95,
    "released": "2019 年 3 月 28 日",
    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1037190/capsule_231x87.jpg?t=1775568887",
@@ -273,7 +271,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
-   "score": 0.8953
+   "score": 0.8954
   },
   {
    "appid": "228200",
@@ -329,7 +327,7 @@
    "discount": 90,
    "price": 3.0,
    "original": 30.0,
-   "reviews": 578,
+   "reviews": 579,
    "pct": 89,
    "released": "2019 年 4 月 30 日",
    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1181000/capsule_231x87.jpg?t=1683734260",
@@ -353,7 +351,7 @@
    "discount": 90,
    "price": 3.0,
    "original": 30.0,
-   "reviews": 534,
+   "reviews": 535,
    "pct": 89,
    "released": "2018 年 7 月 27 日",
    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/898450/capsule_231x87.jpg?t=1699491466",
@@ -369,7 +367,30 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
-   "score": 0.8946
+   "score": 0.8947
+  },
+  {
+   "appid": "825630",
+   "name": "STEINS;GATE 0",
+   "discount": 75,
+   "price": 30.0,
+   "original": 120.0,
+   "reviews": 4838,
+   "pct": 97,
+   "released": "2018 年 5 月 8 日",
+   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/825630/capsule_231x87.jpg?t=1715703408",
+   "url": "https://store.steampowered.com/app/825630/",
+   "desc": "为了改变被注定的命运，造访各个世界线进行干涉，只为了将未来引导至理想的世界。《STEINS;GATE（命运石之门）》带有充满着科幻感的时间悖论与平行世界的世界观，让玩家们能够体验到本作虽看似複杂但却深奥十足的故事。",
+   "genres": [
+    "冒险"
+   ],
+   "chinese": true,
+   "historyLow": 24,
+   "verdict": "中位",
+   "verdictNote": "比史低贵一些",
+   "avgHours": null,
+   "perHour": null,
+   "score": 0.8922
   },
   {
    "appid": "2883280",
@@ -421,6 +442,54 @@
    "score": 0.8355
   },
   {
+   "appid": "227300",
+   "name": "Euro Truck Simulator 2",
+   "discount": 75,
+   "price": 23.24,
+   "original": 92.99,
+   "reviews": 52871,
+   "pct": 96,
+   "released": "2012 年 10 月 12 日",
+   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/227300/da84d11d3ddd817e0cca299608b469a854d75ba5/capsule_231x87.jpg?t=1793285269",
+   "url": "https://store.steampowered.com/app/227300/",
+   "desc": "像公路之王一样在欧洲穿行， 将价值不菲的货物完美送抵远方！往返于英国，比利时，德国，意大利，荷兰，波兰等众多城市；您的耐力，技巧，速度都被您发挥到了极致！",
+   "genres": [
+    "独立",
+    "模拟"
+   ],
+   "chinese": true,
+   "historyLow": 12.69,
+   "verdict": "偏贵",
+   "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
+   "score": 0.9293
+  },
+  {
+   "appid": "312660",
+   "name": "Sniper Elite 4",
+   "discount": 90,
+   "price": 15.8,
+   "original": 158.0,
+   "reviews": 16496,
+   "pct": 90,
+   "released": "2017 年 2 月 13 日",
+   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/312660/capsule_231x87.jpg?t=1681207252",
+   "url": "https://store.steampowered.com/app/312660/",
+   "desc": "在史上最大也最先进的第二次世界大战射击游戏尽享无与伦比的自由狙击。在波澜壮阔的关卡中体验战术级别的第三人称战斗、游戏方式选择，以及史诗般的远程射击，从法西斯主义的魔掌中解放战争时期的意大利。",
+   "genres": [
+    "动作",
+    "冒险"
+   ],
+   "chinese": true,
+   "historyLow": 4.49,
+   "verdict": "偏贵",
+   "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
+   "score": 0.9237
+  },
+  {
    "appid": "282070",
    "name": "This War of Mine",
    "discount": 90,
@@ -451,7 +520,7 @@
    "discount": 70,
    "price": 17.4,
    "original": 58.0,
-   "reviews": 82361,
+   "reviews": 82363,
    "pct": 93,
    "released": "2016 年 7 月 22 日",
    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/477160/0d8220d5231873cc41b2f4b7bc8c57b3b07fdf08/capsule_231x87_alt_assets_27_schinese.jpg?t=1793018738",
@@ -477,7 +546,7 @@
    "discount": 90,
    "price": 10.8,
    "original": 108.0,
-   "reviews": 31359,
+   "reviews": 31363,
    "pct": 89,
    "released": "2018 年 4 月 24 日",
    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/323190/45bfdc7f6b60b2acab44cc96c488f938219c42fd/capsule_231x87.jpg?t=1793633192",
@@ -494,31 +563,6 @@
    "avgHours": null,
    "perHour": null,
    "score": 0.9054
-  },
-  {
-   "appid": "582160",
-   "name": "刺客信条：起源",
-   "discount": 85,
-   "price": 37.2,
-   "original": 248.0,
-   "reviews": 39158,
-   "pct": 85,
-   "released": "2017 年 10 月 26 日",
-   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/582160/capsule_231x87.jpg?t=1793886930",
-   "url": "https://store.steampowered.com/app/582160/",
-   "desc": "在这款动作冒险游戏中，尽情探索古埃及。挑战强敌、揭穿阴谋，探索刺客兄弟会的起源故事。",
-   "genres": [
-    "动作",
-    "冒险",
-    "角色扮演"
-   ],
-   "chinese": true,
-   "historyLow": 6.99,
-   "verdict": "偏贵",
-   "verdictNote": "离史低还远，可以等",
-   "avgHours": null,
-   "perHour": null,
-   "score": 0.9023
   },
   {
    "appid": "512900",
@@ -547,29 +591,27 @@
    "score": 0.8983
   },
   {
-   "appid": "812140",
-   "name": "Assassin's Creed® Odyssey",
-   "discount": 80,
-   "price": 49.6,
-   "original": 248.0,
-   "reviews": 53327,
-   "pct": 86,
-   "released": "2018 年 10 月 5 日",
-   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/812140/capsule_231x87_schinese.jpg?t=1793886405",
-   "url": "https://store.steampowered.com/app/812140/",
-   "desc": "在这款动作冒险游戏中，扬帆驶向古希腊，改变这个国度的命运。陆海激战，从流浪者蜕变成传奇人物，找出自己过往的秘密。",
+   "appid": "412830",
+   "name": "STEINS;GATE",
+   "discount": 70,
+   "price": 27.0,
+   "original": 90.0,
+   "reviews": 15122,
+   "pct": 97,
+   "released": "2016 年 9 月 8 日",
+   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/412830/capsule_231x87_schinese.jpg?t=1715703398",
+   "url": "https://store.steampowered.com/app/412830/",
+   "desc": "由5pb.和nitroplus共同开发的《STEINS;GATE》曾被Famitsu杂志授予年度优秀游戏奖项，并在Famitsu读者调查中被评为最煽情的“催泪游戏”。如此扣人心弦的视觉小说游戏，现已被改编为漫画、动画及剧场版等。 如今终于登陆Steam！",
    "genres": [
-    "动作",
-    "冒险",
-    "角色扮演"
+    "冒险"
    ],
    "chinese": true,
-   "historyLow": 9.24,
+   "historyLow": 18,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
    "avgHours": null,
    "perHour": null,
-   "score": 0.8983
+   "score": 0.8981
   },
   {
    "appid": "8930",
@@ -593,6 +635,29 @@
    "avgHours": null,
    "perHour": null,
    "score": 0.8887
+  },
+  {
+   "appid": "260230",
+   "name": "Valiant Hearts: The Great War™ / Soldats Inconnus : Mémoires de la Grande Guerre™",
+   "discount": 75,
+   "price": 18.75,
+   "original": 75.0,
+   "reviews": 4588,
+   "pct": 96,
+   "released": "2014 年 6 月 25 日",
+   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/260230/capsule_231x87.jpg?t=1782158578",
+   "url": "https://store.steampowered.com/app/260230/",
+   "desc": "这是一个发生在分裂的世界中，关于人物交错的命运与一段破碎爱情的故事。主角将和自己忠实的军犬一同努力，在可怕的战壕中努力存活。随着《勇敢的心》的游戏进程，人们的生活不可避免地交织在了一起。友情、爱情、牺牲、悲剧降临到每一个人的头上，而他们要帮助彼此对抗战争的恐怖，重新找回人性。",
+   "genres": [
+    "冒险"
+   ],
+   "chinese": false,
+   "historyLow": 2.99,
+   "verdict": "偏贵",
+   "verdictNote": "离史低还远，可以等",
+   "avgHours": null,
+   "perHour": null,
+   "score": 0.8868
   },
   {
    "appid": "801480",
@@ -665,77 +730,6 @@
    "avgHours": null,
    "perHour": null,
    "score": 0.8853
-  },
-  {
-   "appid": "1644940",
-   "name": "Loddlenaut",
-   "discount": 70,
-   "price": 23.4,
-   "original": 78.0,
-   "reviews": 3954,
-   "pct": 98,
-   "released": "2023 年 11 月 16 日",
-   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1644940/41ce3770c4aae34b3f7f21b32467b057f08b8a66/capsule_231x87.jpg?t=1785749996",
-   "url": "https://store.steampowered.com/app/1644940/",
-   "desc": "扮演一名星际管理员，接受派遣前去清洁一颗污染严重的海洋星球。拾取垃圾，探索充满活力的水域，并照料一种与蝾螈类似的外星生物！",
-   "genres": [
-    "冒险",
-    "休闲",
-    "独立"
-   ],
-   "chinese": true,
-   "historyLow": 4.75,
-   "verdict": "偏贵",
-   "verdictNote": "离史低还远，可以等",
-   "avgHours": null,
-   "perHour": null,
-   "score": 0.8793
-  },
-  {
-   "appid": "629650",
-   "name": "Symphonic Rain",
-   "discount": 80,
-   "price": 27.2,
-   "original": 136.0,
-   "reviews": 1161,
-   "pct": 96,
-   "released": "2017 年 6 月 14 日",
-   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/629650/capsule_231x87.jpg?t=1737024453",
-   "url": "https://store.steampowered.com/app/629650/",
-   "desc": "降雨永不停歇的城镇琵欧伯，是梦想成为音乐家的年轻人们所聚集的音乐之城。 再过数月就要迎来毕业的主人公库里斯·霍尔顿，必须和负责歌唱的伙伴一起合奏原创曲目，作为符德鲁琴科的毕业制作。不过库里斯至今仍未兴起寻找伙伴的念头，只是不断度过着毫无干劲的每一天。",
-   "genres": [
-    "冒险"
-   ],
-   "chinese": true,
-   "historyLow": 9.99,
-   "verdict": "偏贵",
-   "verdictNote": "离史低还远，可以等",
-   "avgHours": null,
-   "perHour": null,
-   "score": 0.8768
-  },
-  {
-   "appid": "512790",
-   "name": "Quern - 不朽之念",
-   "discount": 90,
-   "price": 7.8,
-   "original": 78.0,
-   "reviews": 3874,
-   "pct": 90,
-   "released": "2016 年 11 月 28 日",
-   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/512790/capsule_231x87.jpg?t=1790011335",
-   "url": "https://store.steampowered.com/app/512790/",
-   "desc": "探索 Quern 过往的真相、解开其当代的谜题并成为改变未来的探索家。 Quern 将可反复用使用的谜题机制融入传统谜题游戏之中，让玩家们能够融汇整款游戏中的谜题而非进行一道道毫无关联的挑战。",
-   "genres": [
-    "冒险"
-   ],
-   "chinese": true,
-   "historyLow": 3.12,
-   "verdict": "偏贵",
-   "verdictNote": "离史低还远，可以等",
-   "avgHours": null,
-   "perHour": null,
-   "score": 0.8735
   }
  ]
 }
