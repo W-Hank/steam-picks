@@ -38,6 +38,24 @@ MIN_DISCOUNT = 50
 MIN_REVIEWS = 100
 MIN_PCT = 85
 
+# 价格分档（B 站推荐视频那种分法）：便宜的先看，贵的分开列
+TIERS = [
+    ("0-10", 0, 10, "喜加一档", "十块以内，试错成本极低"),
+    ("10-30", 10, 30, "小几十", "一杯奶茶到一顿饭"),
+    ("30-60", 30, 60, "中档", "值得想一下再买"),
+    ("60-100", 60, 100, "偏贵", "打折也要考虑"),
+    ("100+", 100, 10 ** 9, "大作档", "百元以上，只看史低"),
+]
+
+
+def tier_of(price):
+    if price is None:
+        return "0-10"
+    for key, lo, hi, _label, _note in TIERS:
+        if lo <= price < hi:
+            return key
+    return "100+"
+
 
 def get(url, timeout=30, retries=3):
     last = None
@@ -307,6 +325,7 @@ def main():
             "verdictNote": note,
             "avgHours": hours,
             "perHour": per_hour,
+            "tier": tier_of(g["price"]),
             "score": score(g, low),
         })
         items.append(item)
@@ -332,6 +351,11 @@ def main():
         "count": len(items),
         "withHistory": sum(1 for x in items if x.get("historyLow")),
         "withHours": sum(1 for x in items if x.get("avgHours")),
+        "tiers": [
+            {"key": k, "label": label, "note": note, "min": lo, "max": (None if hi >= 10 ** 9 else hi),
+             "count": sum(1 for x in items if x.get("tier") == k)}
+            for k, lo, hi, label, note in TIERS
+        ],
         "items": items,
     }
     data_dir = os.path.join(ROOT, "data")
