@@ -1,8 +1,50 @@
 {
- "generatedAt": "2026-11-11 04:34",
+ "generatedAt": "2026-11-11 08:31",
  "count": 30,
  "withHistory": 29,
- "withHours": 0,
+ "withHours": 6,
+ "tiers": [
+  {
+   "key": "0-10",
+   "label": "喜加一档",
+   "note": "十块以内，试错成本极低",
+   "min": 0,
+   "max": 10,
+   "count": 13
+  },
+  {
+   "key": "10-30",
+   "label": "小几十",
+   "note": "一杯奶茶到一顿饭",
+   "min": 10,
+   "max": 30,
+   "count": 13
+  },
+  {
+   "key": "30-60",
+   "label": "中档",
+   "note": "值得想一下再买",
+   "min": 30,
+   "max": 60,
+   "count": 4
+  },
+  {
+   "key": "60-100",
+   "label": "偏贵",
+   "note": "打折也要考虑",
+   "min": 60,
+   "max": 100,
+   "count": 0
+  },
+  {
+   "key": "100+",
+   "label": "大作档",
+   "note": "百元以上，只看史低",
+   "min": 100,
+   "max": null,
+   "count": 0
+  }
+ ],
  "items": [
   {
    "appid": "413410",
@@ -25,6 +67,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
+   "tier": "0-10",
    "score": 0.9732
   },
   {
@@ -48,6 +91,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.9402
   },
   {
@@ -72,7 +116,33 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
+   "tier": "0-10",
    "score": 0.9249
+  },
+  {
+   "appid": "1277510",
+   "name": "Re:从零开始的异世界生活 虚假的王选候补",
+   "discount": 90,
+   "price": 36.5,
+   "original": 365.0,
+   "reviews": 1103,
+   "pct": 87,
+   "released": "2021 年 1 月 27 日",
+   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1277510/capsule_231x87_schinese.jpg?t=1715700857",
+   "url": "https://store.steampowered.com/app/1277510/",
+   "desc": "因不该存在的第六位国王候补人选的出现， 让爱蜜莉雅参选资格的真伪受到怀疑。 由原作者完全监制的游戏原创剧情， 带来另一个《Re:从零开始的异世界生活》。",
+   "genres": [
+    "冒险",
+    "策略"
+   ],
+   "chinese": true,
+   "historyLow": 36.5,
+   "verdict": "史低",
+   "verdictNote": "持平或低于历史最低",
+   "avgHours": 10.3,
+   "perHour": 3.54,
+   "tier": "30-60",
+   "score": 0.9232
   },
   {
    "appid": "1190000",
@@ -96,6 +166,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.9158
   },
   {
@@ -119,8 +190,9 @@
    "historyLow": 39.2,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
-   "avgHours": null,
-   "perHour": null,
+   "avgHours": 10.8,
+   "perHour": 3.63,
+   "tier": "30-60",
    "score": 0.9046
   },
   {
@@ -146,6 +218,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.9031
   },
   {
@@ -169,6 +242,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.9017
   },
   {
@@ -194,8 +268,9 @@
    "historyLow": 7,
    "verdict": "史低",
    "verdictNote": "持平或低于历史最低",
-   "avgHours": null,
-   "perHour": null,
+   "avgHours": 48.4,
+   "perHour": 0.14,
+   "tier": "0-10",
    "score": 0.9017
   },
   {
@@ -221,6 +296,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
+   "tier": "0-10",
    "score": 0.8986
   },
   {
@@ -245,6 +321,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
+   "tier": "30-60",
    "score": 0.8956
   },
   {
@@ -271,6 +348,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
+   "tier": "0-10",
    "score": 0.8954
   },
   {
@@ -295,6 +373,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.8947
   },
   {
@@ -303,7 +382,7 @@
    "discount": 90,
    "price": 3.0,
    "original": 30.0,
-   "reviews": 1465,
+   "reviews": 1466,
    "pct": 91,
    "released": "2016 年 8 月 15 日",
    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/515570/capsule_231x87.jpg?t=1699491334",
@@ -319,7 +398,8 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
-   "score": 0.9211
+   "tier": "0-10",
+   "score": 0.9212
   },
   {
    "appid": "1181000",
@@ -327,7 +407,7 @@
    "discount": 90,
    "price": 3.0,
    "original": 30.0,
-   "reviews": 579,
+   "reviews": 580,
    "pct": 89,
    "released": "2019 年 4 月 30 日",
    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1181000/capsule_231x87.jpg?t=1683734260",
@@ -343,7 +423,8 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
-   "score": 0.896
+   "tier": "0-10",
+   "score": 0.8961
   },
   {
    "appid": "898450",
@@ -367,6 +448,7 @@
    "verdictNote": "持平或低于历史最低",
    "avgHours": null,
    "perHour": null,
+   "tier": "0-10",
    "score": 0.8947
   },
   {
@@ -390,6 +472,7 @@
    "verdictNote": "比史低贵一些",
    "avgHours": null,
    "perHour": null,
+   "tier": "30-60",
    "score": 0.8922
   },
   {
@@ -412,8 +495,9 @@
    "historyLow": 3.15,
    "verdict": "接近史低",
    "verdictNote": "只比史低贵一点",
-   "avgHours": null,
-   "perHour": null,
+   "avgHours": 6.5,
+   "perHour": 0.51,
+   "tier": "0-10",
    "score": 0.8539
   },
   {
@@ -439,6 +523,7 @@
    "verdictNote": "比史低贵一些",
    "avgHours": null,
    "perHour": null,
+   "tier": "0-10",
    "score": 0.8355
   },
   {
@@ -447,7 +532,7 @@
    "discount": 75,
    "price": 23.24,
    "original": 92.99,
-   "reviews": 52871,
+   "reviews": 52870,
    "pct": 96,
    "released": "2012 年 10 月 12 日",
    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/227300/da84d11d3ddd817e0cca299608b469a854d75ba5/capsule_231x87.jpg?t=1793285269",
@@ -461,8 +546,9 @@
    "historyLow": 12.69,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
-   "avgHours": null,
-   "perHour": null,
+   "avgHours": 105.5,
+   "perHour": 0.22,
+   "tier": "10-30",
    "score": 0.9293
   },
   {
@@ -487,6 +573,7 @@
    "verdictNote": "离史低还远，可以等",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.9237
   },
   {
@@ -512,6 +599,7 @@
    "verdictNote": "离史低还远，可以等",
    "avgHours": null,
    "perHour": null,
+   "tier": "0-10",
    "score": 0.9198
   },
   {
@@ -538,6 +626,7 @@
    "verdictNote": "离史低还远，可以等",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.9096
   },
   {
@@ -546,7 +635,7 @@
    "discount": 90,
    "price": 10.8,
    "original": 108.0,
-   "reviews": 31363,
+   "reviews": 31362,
    "pct": 89,
    "released": "2018 年 4 月 24 日",
    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/323190/45bfdc7f6b60b2acab44cc96c488f938219c42fd/capsule_231x87.jpg?t=1793633192",
@@ -562,6 +651,7 @@
    "verdictNote": "离史低还远，可以等",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.9054
   },
   {
@@ -588,6 +678,7 @@
    "verdictNote": "离史低还远，可以等",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.8983
   },
   {
@@ -611,6 +702,7 @@
    "verdictNote": "离史低还远，可以等",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.8981
   },
   {
@@ -634,6 +726,7 @@
    "verdictNote": "离史低还远，可以等",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.8887
   },
   {
@@ -657,6 +750,7 @@
    "verdictNote": "离史低还远，可以等",
    "avgHours": null,
    "perHour": null,
+   "tier": "10-30",
    "score": 0.8868
   },
   {
@@ -679,8 +773,9 @@
    "historyLow": 0,
    "verdict": "偏贵",
    "verdictNote": "离史低还远，可以等",
-   "avgHours": null,
-   "perHour": null,
+   "avgHours": 4.3,
+   "perHour": 1.63,
+   "tier": "0-10",
    "score": 0.8866
   },
   {
@@ -704,32 +799,8 @@
    "verdictNote": "离史低还远，可以等",
    "avgHours": null,
    "perHour": null,
+   "tier": "0-10",
    "score": 0.8858
-  },
-  {
-   "appid": "475550",
-   "name": "Beholder",
-   "discount": 90,
-   "price": 5.6,
-   "original": 56.0,
-   "reviews": 5904,
-   "pct": 91,
-   "released": "2016 年 11 月 9 日",
-   "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/475550/capsule_231x87_schinese.jpg?t=1794250243",
-   "url": "https://store.steampowered.com/app/475550/",
-   "desc": "你是一名在极权社会中被政府安插的楼管。你必须监视你的租户，偷听他们的对话，并向你的上级报告他们！最重要的是，你必须还要向当局报告会密谋颠覆政府的任何人。你必须！但你会吗？",
-   "genres": [
-    "冒险",
-    "独立",
-    "策略"
-   ],
-   "chinese": true,
-   "historyLow": 0.63,
-   "verdict": "偏贵",
-   "verdictNote": "离史低还远，可以等",
-   "avgHours": null,
-   "perHour": null,
-   "score": 0.8853
   }
  ]
 }
